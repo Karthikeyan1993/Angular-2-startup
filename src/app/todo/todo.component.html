@@ -1,0 +1,19 @@
+<p>
+  {{this.message}}
+</p>
+<form action="" autocomplete="off">
+  <table>
+    <tr>
+      <td>Todo Name:</td>
+      <td><input type="text" name="todoName" placeholder="Todo Name" [(ngModel)]="todo.todoName"></td>
+    </tr>
+    <tr>
+      <td>Todo Description:</td>
+      <td><input type="text" placeholder="Todo Description" name="todoDesc" [(ngModel)]="todo.todoDesc"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button type="submit" (click)="testFunc()">Add</button></td>
+    </tr>
+  </table>
+</form>
